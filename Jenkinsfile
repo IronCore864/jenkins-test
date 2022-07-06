@@ -8,7 +8,9 @@ podTemplate(containers: [
             container('golang') {
                 stage('Build a Go project') {
                     sh '''
-                    cd /go/src/github.com/ironcore864/jenkins-test && go run main.go
+                    pwd
+                    ls
+                    echo "hello, world!"
                     '''
                 }
             }
